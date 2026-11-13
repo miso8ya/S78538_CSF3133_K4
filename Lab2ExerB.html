@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+
+    <!-- Error Identification:
+    Error 1 (Line 10): Incorrect closing tag </head> instead of </header>.
+    Error 2 (Line 20): Rating heading uses <td> instead of <th>.
+    Error 3 (Line 26): Missing closing </tr> tag.
+    Error 4 (Line 28): Incorrect colspan="3", should be colspan="2".
+    Error 5 (Line 32): Missing closing </td> tag after Semantic HTML.
+    Error 6 (Line 40): Label for="name" does not match input id="fullname".
+    Error 7 (Line 41): Radio buttons have different names, should share one name.
+    Error 8 (Line 46): Checkbox label for="labs" does not match id="lab".
+    Error 9 (Line 48): Form closing tag is misspelled as </from>.
+    Error 10 (Line 51): Missing semicolon in &copy; entity.
+    Error 11 (Line 13): Navigation is outside the header section.
+    -->
+
+    <!-- Header Section -->
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#results">Results</a> |
+        <a href="#form">Feedback Form</a> |
+        <a href="#comments">Student Comments</a>
+    </nav>
+
+    <!-- Feedback Results Section -->
+    <section id="results">
+        <h2>Feedback Summary</h2>
+
+        <table border="1">
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Tables and Forms</td>
+                <td>4.2</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td rowspan="2">Mini Project</td>
+                <td>4.5</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>4.8</td>
+            </tr>
+
+            <tr>
+                <th colspan="2">Average Rating</th>
+                <th>4.4</th>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+
+        <form action="submit_feedback.php" method="post">
+
+            <!-- Name Input -->
+            <label for="fullname">Name:</label>
+            <input type="text" id="fullname" name="name">
+            <br><br>
+
+            <!-- Email Input -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+
+            <!-- Overall Rating Radio Buttons -->
+            <p>Overall Rating:</p>
+
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label>
+
+            <input type="radio" id="average" name="rating" value="average">
+            <label for="average">Average</label>
+
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label>
+            <br><br>
+
+            <!-- Lab Attendance Checkbox -->
+            <input type="checkbox" id="lab" name="lab" value="yes">
+            <label for="lab">I attended all labs</label>
+            <br><br>
+
+            <!-- Topics for More Practice -->
+            <p>Topics I Want More Practice On:</p>
+
+            <input type="checkbox" id="html" name="topics" value="HTML">
+            <label for="html">HTML</label>
+            <br>
+
+            <input type="checkbox" id="tables" name="topics" value="Tables">
+            <label for="tables">Tables</label>
+            <br>
+
+            <input type="checkbox" id="forms" name="topics" value="Forms">
+            <label for="forms">Forms</label>
+            <br><br>
+
+            <!-- Section or Group Dropdown -->
+            <label for="group">Section/Group:</label>
+
+            <select id="group" name="group">
+                <option value="Group A">Group A</option>
+                <option value="Group B">Group B</option>
+                <option value="Group C">Group C</option>
+            </select>
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Feedback">
+
+        </form>
+    </section>
+
+    <!-- Student Comments Section -->
+    <section id="comments">
+        <h2>Student Comments</h2>
+
+        <!-- First Student Article -->
+        <article>
+            <h3>Ali</h3>
+            <p>
+                The course is interesting and helps me understand
+                the basics of HTML.
+            </p>
+        </article>
+
+        <!-- Second Student Article -->
+        <article>
+            <h3>Siti</h3>
+            <p>
+                I enjoy learning tables and forms because
+                I can create better websites.
+            </p>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+
+</body>
+</html>
