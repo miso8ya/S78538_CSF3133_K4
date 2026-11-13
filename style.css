@@ -1,0 +1,136 @@
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f8ff;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    text-decoration: overline;
+}
+
+h2 {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: darkblue;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav a:hover {
+    background-color: skyblue;
+}
+
+/* Destination Cards */
+#destinations {
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    width: 25%;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+/* Video */
+#video {
+    text-align: center;
+    padding: 20px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Trip Form */
+.trip-form {
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid blue;
+    width: 80%;
+    margin: auto;
+}
+
+.trip-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+    width: 90%;
+    padding: 8px;
+}
+
+/* Link States */
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: red;
+}
+
+/* Footer */
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+
+    nav li {
+        display: block;
+    }
+}
