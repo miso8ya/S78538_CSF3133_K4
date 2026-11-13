@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #welcome {
+            background-color: lightpink;
+            text-align: center;
+        }
+
+        #welcome h1 {
+            color: aqua;
+        }
+    </style>
+</head>
+</html>
+
+<!--Header-->
+<header id="Welcome">
+    <h1>Visit Terengganu</h1>
+    <p>Discover the Beauty of Terengganu!</p>
+</header>
+
+<!--Navigation Bar-->
+<nav>
+    <ul>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#trip">Trip</a></li>
+    </ul>
+</nav>
+
+<!--Destinations Section-->
+<section id="Destinations">
+    <h2>Popular Destinations</h2>
+
+    <article class="card">
+        <h3>Redang Island</h3>
+        <p>Enjoy beautiful beaches and clear blue water.</p>
+        <p><span class=old-price">RM 299</span>
+        RM 199</p>
+    </article>
+
+    <article class="card">
+        <h3>Perhentian Island</h3>
+        <p>Explore marine life and enjoy snorkelling.</p>
+        <p><span class=old-price">RM 250</span>
+        RM 180</p>
+    </article>
+
+    <article class="card">
+        <h3>Crystal Mosque</h3>
+        <p>Visit the beautiful islamic landmark.</p>
+        <p><span class=old-price">RM 100</span>
+        RM 70</p>
+    </article>
+
+    <p>Trip seats filled:
+        <meter min="0" max="40" value="28"></meter>
+        28/40
+    </p>
+</section>
+
+<!--Video Section-->
+<section id="video">
+    <h2>Visit Terengganu Video</h2>
+
+    <figure>
+        <video width="500" height="300" controls>
+            <source src="Terengganu.mp4" type="video.mp4">
+            Your browser does not support video.
+        </video>
+
+        <figcaption>
+            Discover the beauty of Terengganu.
+        </figcaption>
+    </figure>
+</section>
+
+<!--Trip from Section-->
+ <section id="trip">
+        <h2>Register Your Interest</h2>
+
+        <form class="trip-form">
+
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <label>E-mail:</label>
+            <input type="email" name="email" required>
+
+            <p>Traveller Type:</p>
+            <input type="radio" name="traveller" value="Student"> Student
+            <input type="radio" name="traveller" value="Staff"> Staff
+            <input type="radio" name="traveller" value="Public"> Public
+
+            <p>Interests:</p>
+            <input type="checkbox" name="interest" value="Islands"> Islands
+            <input type="checkbox" name="interest" value="Food"> Food
+            <input type="checkbox" name="interest" value="Culture"> Culture
+            <input type="checkbox" name="interest" value="Nature"> Nature
+
+            <br><br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+<!--Footer-->
+<footer>
+    <p>&copy; 2026 Visit Terengganu</p>
+    <adress>
+        E-mail:
+        <a href="mailto:aleeyaqemar86@gmail.com">aleeyaqemar86@gmail.com</a>
+    </adress>
+</footer>
+
+</body>
+</html>

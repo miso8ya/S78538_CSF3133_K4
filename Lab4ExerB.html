@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+    <link rel="stylesheet" href="cafe.css">
+
+    <style>
+        #intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+        }
+
+        #cafe-title {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Errors and Corrections:
+1. Line 7: CSS comment syntax corrected.
+2. Line 9: list-style-type: no changed to none.
+3. Lines 14-15: Link states reordered.
+4. Line 17: overlined changed to overline.
+5. Line 18: Missing colon after color corrected.
+6. Line 22: highlight changed to .highlight.
+7. Line 26: Missing closing brace added.
+8. Line 41: class intro changed to id intro.
+9. Line 46: Duplicate id item removed.
+10. Line 34: Menu link changed to #menu.
+11. Line 53: controls added to video.
+12. Line 54: type mp4 changed to video/mp4.
+-->
+
+    <!-- Header -->
+    <header>
+        <h1 id="cafe-title">e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+
+        <p id="intro">
+            Freshly brewed coffee and local delights every day.
+        </p>
+
+        <article>
+            <h3>Kopi Tarik</h3>
+            <p>
+                <span class="old-price">RM 4.50</span>
+                <span class="highlight">RM 3.50</span>
+            </p>
+        </article>
+
+        <article>
+            <h3>Nasi Lemak</h3>
+            <p>
+                <span class="old-price">RM 6.50</span>
+                <span class="highlight">RM 5.00</span>
+            </p>
+        </article>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Welcome to e-Café Campus!
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Feedback Form -->
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+
+        <form class="feedback-form">
+
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <label>E-mail:</label>
+            <input type="email" name="email" required>
+
+            <p>Visit Type:</p>
+            <input type="radio" name="visit" value="Dine-in"> Dine-in
+            <input type="radio" name="visit" value="Take-away"> Take-away
+
+            <p>Favourite Items:</p>
+            <input type="checkbox" name="favourite" value="Coffee"> Coffee
+            <input type="checkbox" name="favourite" value="Nasi Lemak"> Nasi Lemak
+            <input type="checkbox" name="favourite" value="Tea"> Tea
+
+            <br><br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+
+        <address>
+            Email:
+            <a href="mailto:ecafe@example.com">ecafe@example.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>
